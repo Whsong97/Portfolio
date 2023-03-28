@@ -1,17 +1,20 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 // import { useParams } from 'react-router-dom'
 
 export default function Hero() {
-    
-  return (
-    <div>
+
+    const heroStyle = {backgroundColor: "rgb(119, 136, 153)", height: "50vh" }
+
+    return (
         <div>
-            Wing Hang Song 
+            <div style={ heroStyle }>
+                Wing Hang Song
+            </div>
+            <div>
+                Front End Devloper
+            </div>
+            <Button variant="outline-dark"><a href="https://www.linkedin.com/in/winghangsong/">Contact Me!</a> </Button>
         </div>
-        <div>
-            Front End Devloper
-        </div>
-        <button> <a href="https://www.linkedin.com/in/winghangsong/">Contact Me!</a> </button>
-    </div>
-  )
+    )
 }

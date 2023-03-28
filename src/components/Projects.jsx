@@ -1,7 +1,14 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
 
 export default function Projects() {
-  return (
-    <div>projects</div>
-  )
+
+const myProjects = [{title:"Loan Calculator"}, {title:"Payroll System"}, {title:"Bug Tracker"}]
+
+    return (
+        <div>
+            <h2>Projects</h2>
+            {myProjects.flatMap(projects => <ProjectCard />)}
+        </div>
+    )
 }
